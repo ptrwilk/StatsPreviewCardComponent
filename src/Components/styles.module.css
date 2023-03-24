@@ -1,0 +1,121 @@
+@import url('../colors.css');
+
+.container{
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container .card{
+    width: 550px;
+    padding: 4rem;
+    background-color: var(--dark-desaturated-blue);
+}
+
+.container .card .title{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.container .card .title .highlight{
+    color: var(--soft-violet);
+}
+
+.container .card .section{
+    margin-right: 4.5rem;
+}
+
+.container .card .section .text{
+    margin-top: 2rem;
+    color: var(--sligtly-transparent-white-second);
+}
+
+.container .card .section .items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.container .card .section .item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container .card .section .item .amount{
+    font-weight: 700;
+    color: var(--white);
+}
+
+.container .card .section .item .name{
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    color: var(--sligtly-transparent-white-second);
+}
+
+.container .img{
+    position: relative;
+    width: 550px;
+    background-image: url('../assets/image-header-desktop.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.container .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-color: var(--soft-violet);
+}
+
+@media (max-width : 500px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .container .card{
+        width: 300px;
+        padding: 2rem;
+        padding-top: 3rem;
+    }
+
+    .container .card .title{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container .card .section{
+        margin-right: 0;
+    }
+
+    .container .card .section .text{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .container .card .section .items{
+        margin-top: 2rem;
+    }
+
+    .container .card .section .items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .card .section .item:not(:first-child){
+        margin-top: 2rem;
+    }
+
+    .container .card .section .item{
+        align-items: center;
+    }
+
+    .container .img{
+        width: 300px;
+        height: 300px;
+        background-image: url('../assets/image-header-mobile.jpg');
+    }
+}

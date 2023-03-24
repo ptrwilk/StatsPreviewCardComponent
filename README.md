@@ -5,3 +5,8 @@
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [MUI](https://mui.com/)
+
+### What I learned
+
+- image overlay
+- change inner text color
